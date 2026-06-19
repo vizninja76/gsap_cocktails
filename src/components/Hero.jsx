@@ -1,7 +1,9 @@
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 
 
 const Hero = () => {
@@ -42,7 +44,7 @@ const Hero = () => {
     return (
         <>
             <section id="hero" className="noisy">
-                <h1 classname="title">MOJITO</h1>  
+                <h1 className="title">MOJITO</h1>  
                 <img
                 src="/images/hero-left-leaf.png"
                 alt="left-leaf"
@@ -62,14 +64,14 @@ const Hero = () => {
                             <p className="subtitle">
                                 Sip the Spirit <br /> of Summer
                             </p>
-                        </div>"
+                        </div>
 
                     <div className="view-cocktails">
-                        <p classname="subtitle">
+                        <p className="subtitle">
                             Every cocktail on our menu is a blend of premium ingredients, creative flair, and timeless recipes - designed to delight your senses. 
                         </p>
                         <a href="#cocktails">View Cocktails</a>
-                        </div>"    
+                        </div>    
                     </div>
                 </div>
             </section>
