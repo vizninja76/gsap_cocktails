@@ -1,7 +1,9 @@
-import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { cocktailLists, mockTailLists } from '../../constants/index.js'
 
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Cocktails = () => {
     useGSAP(() => {
@@ -16,10 +18,12 @@ const Cocktails = () => {
 
         parallaxTimeline
             .from('#c-left-leaf', {
-                x: -100, y: 100
+                x: -100,
+                y: 100
             })
             .from('#c-right-leaf', {
-                x: 100, y: 100
+                x: 100,
+                y: 100
             })
     })
 
