@@ -102,10 +102,10 @@ const goodLists = [
 
 const storeInfo = {
  heading: "Where to Find Us",
- address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+ address: "Agerskovvej 23A, 2610 Rødovre, Denmark",
  contact: {
-	phone: "(555) 987-6543",
-	email: "hello@jsmcocktail.com",
+	phone: "(+45) 40631672",
+	email: "lh@mouseandmind.com",
  },
 };
 
@@ -120,7 +120,7 @@ const socials = [
  {
 	name: "Instagram",
 	icon: "/images/insta.png",
-	url: "#",
+	url: "https://www.instagram.com/henriksen_lars/",
  },
  {
 	name: "X (Twitter)",
@@ -130,7 +130,7 @@ const socials = [
  {
 	name: "Facebook",
 	icon: "/images/fb.png",
-	url: "#",
+	url: "https://www.facebook.com/lars.henriksen.581",
  },
 ];
 
